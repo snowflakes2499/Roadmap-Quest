@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web UI</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/LoginPage.acf7750a.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/landing.ecae34cc.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/Footer.a8527c8f.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/loader.d7f25e1b.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='loader.cf707763.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VRow.772c5f1d.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VGrid.2875219e.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='Footer.e17442d6.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/SnackbarComponent.7052e6cf.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VSnackbar.94bb7ff4.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VOverlay.c83edced.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/forwardRefs.9cf409b9.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/transition.cf5fa784.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VOverlay.0e1381c2.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VSnackbar.f0d84ef2.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VCol.72c2399f.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VImg.20075114.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VImg.ebeecff9.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VTextField.36acace1.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VField.18b74bcd.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/index.cecff202.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VInput.88b00408.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VInput.4a24052f.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VField.9cb6d830.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VTextField.0f8ca3b9.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VBtn.07e2d2aa.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/group.060963f2.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VProgressCircular.97ccabb5.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/resizeObserver.63c5ece7.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VProgressCircular.4471e8f1.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VBtn.0b028df5.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VContainer.648b2a3e.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VCard.fc58f62a.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/createSimpleFunctional.37747d44.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VCardTitle.1456d72e.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VAvatar.390f686f.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VAvatar.790cefc8.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VCardText.bce857e4.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VCard.7131d337.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VTable.f68658a7.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VTable.5086da36.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VDialog.10697a37.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/dialog-transition.fe01a845.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VDialog.9119fae6.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css') }}" media="all">
+<link rel="stylesheet" href="{{ url_for('static', filename='LoginPage.192e9688.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/Default.19a394f2.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/Speed.bf6d77ef.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VTooltip.5b7af7ba.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VTooltip.f9cec267.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='Speed.a06e609f.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VNavigationDrawer.1445a85e.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VToolbar.f172949d.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VToolbar.b33fbc52.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/layout.f27feefc.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/ssrBoot.90f999bc.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VNavigationDrawer.9a3643f9.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VSpacer.2e004bc1.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VMenu.0fd0f015.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VListItem.5ce6de53.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VListItem.5bde9d6d.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VDivider.3e2fb585.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VDivider.e405f18e.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VMenu.957401a2.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VAppBar.46347076.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VAppBar.eea06112.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VSelect.49954a25.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VCheckboxBtn.0bfd0b10.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VSelectionControl.92fbe48f.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VSelectionControl.7d26ffd8.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VChip.373dbdb7.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VChip.4c657ba1.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VSelect.1162b0c3.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VMain.e1ab66bf.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VMain.4f2ad589.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VApp.e2eb721f.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VApp.0b920e54.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='Default.30793048.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/Dashboard.24fa7431.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/AccessForbidden.59ddc9aa.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='AccessForbidden.183d44c3.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VAlert.3830ea96.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VAlert.d0d2fb42.css') }}">
+
+</head>
+<body>
+
+
+
+
+<div class="v-toolbar__content" style="height: 64px;">
+                        <div class="v-toolbar__prepend">
+                           <div class="v-responsive v-img" aria-label="" style="height: 50px; width: 50px;">
+                              <div class="v-responsive__sizer" style="padding-bottom: 131.646%;"></div>
+                              <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='vit_logo.png') }}" alt="" style=""><!----><!----><!----><!----><!---->
+                           </div>
+                        </div>
+                        <!---->
+                        <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text d-flex d-sm-none v-app-bar-nav-icon">
+                           <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!----><span class="v-btn__content" data-no-activator=""><i class="mdi-menu mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true"></i></span><!----><!---->
+                        </button>
+                        <div class="v-toolbar-title v-app-bar-title">
+                           <div class="v-toolbar-title__placeholder">
+                              <!---->
+                              <div class="display-mobile org-name after-w-dot">Vishwakarma Institute of Technology,Pune</div>
+                           </div>
+                        </div>
+                        <span data-v-fdcfd168="" id="speed" class="mr-15">
+                           <!----><!----><span data-v-fdcfd168="" class="speed-text"><span data-v-fdcfd168="" class="text-uppercase">4g</span>⚡️10+ Mbps</span>
+                        </span>
+                        <span>
+                           <a aria-current="page" href="http://127.0.0.1:5000/home" class="router-link-active router-link-exact-active pname">
+                              <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" aria-describedby="v-tooltip-9" style="margin-right: 2rem;">
+                                 <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!---->
+                                 <span class="v-btn__content" data-no-activator="">
+                                    <div class="v-responsive v-img" aria-label="" style="height: 40px; width: 30px;">
+                                       <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                                       <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='home.6fcd2c13.svg') }}" alt="" style=""><!----><!----><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                 </span>
+                                 <!----><!---->
+                              </button>
+                           </a>
+                           <a href="https://learner.vierp.in/analytics-dashboard" class="org-name">
+                              <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" aria-describedby="v-tooltip-11" style="margin-right: 2rem;">
+                                 <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!---->
+                                 <span class="v-btn__content" data-no-activator="">
+                                    <div class="v-responsive v-img" aria-label="" style="height: 40px; width: 30px;">
+                                       <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                                       <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='speedometer.5dc2541a.svg') }}" alt="" style=""><!----><!----><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                 </span>
+                                 <!----><!---->
+                              </button>
+                           </a>
+                           <a href="https://learner.vierp.in/query" class="pname">
+                              <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" aria-describedby="v-tooltip-13" style="margin-right: 2rem;">
+                                 <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!---->
+                                 <span class="v-btn__content" data-no-activator="">
+                                    <div class="v-responsive v-img" aria-label="" style="height: 40px; width: 30px;">
+                                       <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                                       <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='help.cfb4c2a1.svg') }}" alt="" style=""><!----><!----><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                 </span>
+                                 <!----><!---->
+                              </button>
+                           </a>
+                           <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" aria-describedby="v-tooltip-15" style="margin-right: 2rem;">
+                              <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!---->
+                              <span class="v-btn__content" data-no-activator="">
+                                 <div class="v-responsive v-img" aria-label="" style="height: 40px; width: 30px;">
+                                    <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                                    <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='query.0a6bdd65.svg') }}" alt="" style=""><!----><!----><!----><!----><!---->
+                                 </div>
+                                 <!---->
+                              </span>
+                              <!----><!---->
+                           </button>
+                           <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" aria-describedby="v-tooltip-17" style="margin-right: 2rem;">
+                              <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!---->
+                              <span class="v-btn__content" data-no-activator="">
+                                 <a href="https://learner.vierp.in/notification" class="pname">
+                                    <div class="v-badge" overlap="">
+                                       <div class="v-badge__wrapper">
+                                          <div class="v-responsive v-img" aria-label="" style="height: 40px; width: 30px;">
+                                             <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                                             <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='notification.e27d6ea4.webp') }}" alt="" style=""><!----><!----><!----><!----><!---->
+                                          </div>
+                                          <span class="v-badge__badge v-theme--light bg-red" aria-atomic="true" aria-label="Badge" aria-live="polite" role="status" style="bottom: calc(100% - 12px); left: calc(100% - 12px);">0</span>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <!---->
+                              </span>
+                              <!----><!---->
+                           </button>
+                           <!----><!----><!----><!---->
+                           <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" style="margin-right: 2rem;">
+                              <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!----><span class="v-btn__content" data-no-activator=""><i class="mdi-arrow-expand-all mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" style="color: rgb(89, 101, 192); caret-color: rgb(89, 101, 192);"></i></span><!----><!---->
+                           </button>
+                           <div class="v-avatar v-theme--light v-avatar--density-default v-avatar--size-default v-avatar--variant-flat mr-5 name">
+                              <button type="button" class="v-btn v-theme--light text-white v-btn--density-default v-btn--size-default v-btn--variant-text justify-left" targetref="[object Object]" aria-haspopup="menu" aria-expanded="false" aria-owns="v-menu-19">
+                                 <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!----><span class="v-btn__content" data-no-activator="">SD</span><!----><!---->
+                              </button>
+                              <!----><span class="v-avatar__underlay"></span>
+                           </div>
+                           <!---->
+                        </span>
+                        <!---->
+                     </div>
+
+<hr>
+
+<br><br><br>
+
+<center>
+<form action="/submit" method="post">
+        <h2>Roadmap Quest</h2>
+
+        <div class="form-group">
+            <label for="field_of_study">Choose your field of study:</label>
+            <select name="field_of_study" id="field_of_study">
+                <option value="machine_learning">Machine Learning</option>
+                <option value="cloudcomputing">Cloud Computing</option>
+                <option value="blockchain">Blockchain</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="year_of_study">Select your year of study:</label>
+            <select name="year_of_study" id="year_of_study" required>
+                <option value="first year">First Year</option>
+                <option value="second year">Second Year</option>
+                <option value="third year">Third Year</option>
+                <option value="fourth year">B Tech</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="daily_hours">How much time can you provide daily (in hours):</label>
+            <input type="range" name="daily_hours" id="daily_hours" min="1" max="6" value="1" required>
+            <output for="daily_hours" id="hours_value">1 hour</output>
+        </div>
+
+        <script>
+
+
+            var slider = document.getElementById("daily_hours");
+            var output = document.getElementById("hours_value");
+            output.innerHTML = slider.value + " hour";
+
+            slider.oninput = function() {
+                output.innerHTML = this.value + " hour";
+            }
+
+
+        </script>
+
+        <div class="form-group">
+            <label for="cgpa">Enter your CGPA:</label>
+            <input type="text" name="cgpa" id="cgpa" required>
+        </div>
+
+        <input type="submit" value="Submit">
+    </form>
+   </center>
+</body>
+</html>

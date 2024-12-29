@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)https://learner.vierp.in/DashBoard -->
+<html lang="en" class="wf-roboto-n4-active wf-roboto-n3-active wf-roboto-n5-active wf-roboto-n1-active wf-roboto-n7-active wf-active">
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>EduPlusCampus</title>
+      <style>.bd-no-scroll {color: purple;background-color: #e5e5e5;height: 150px;}.spin-loader-mask { background:rgba(0,0,0,0.0); position: fixed; top: 50%; left: 50%; z-index:-1; -webkit-transform:translate(-50%,-50%); -moz-transform:translate(-50%,-50%); transform:translate(-50%,-50%); }.spin-loader > div {position:absolute; top:50%; left:50%; width:50px; height:50px; background:#ff9000;-webkit-transform:translate(-50%,-50%); -moz-transform:translate(-50%,-50%); transform:translate(-50%,-50%);-webkit-animation:spin-loader 3s 0s cubic-bezier(.09,.57,.49,.9) infinite; animation:spin-loader 3s 0s cubic-bezier(.09,.57,.49,.9) infinite; z-index: 9999;}@keyframes spin-loader { 25% {-webkit-transform:perspective(100px) rotateX(180deg) rotateY(0);transform:perspective(100px) rotateX(180deg) rotateY(0)}50% {-webkit-transform:perspective(100px) rotateX(180deg) rotateY(180deg);transform:perspective(100px) rotateX(180deg) rotateY(180deg)}75% {-webkit-transform:perspective(100px) rotateX(0) rotateY(180deg);transform:perspective(100px) rotateX(0) rotateY(180deg)}100%{-webkit-transform:perspective(100px) rotateX(0) rotateY(0);transform:perspective(100px) rotateX(0) rotateY(0)} }</style>
+      <script type="text/javascript" src="./EduPlusCampus_files/jquery-3.3.1.js.download"></script>
+      <script src="./EduPlusCampus_files/jquery.table2excel.min.js.download"></script>
+      <script src="./EduPlusCampus_files/xlsx.full.min.js.download"></script>
+      <script type="text/javascript" src="./EduPlusCampus_files/app.bundle.js.download" async=""></script>
+      <script type="text/x-mathjax-config;executed=true">
+         MathJax.Hub.Config({
+           tex2jax: {
+             inlineMath: [['$','$'],['\\(','\\)']],
+           }
+         });
+      </script>
+      <script type="text/javascript" async="" src="./EduPlusCampus_files/MathJax.js.download"></script>
+      <script type="module" crossorigin="" src="./EduPlusCampus_files/index.ab30b7c6.js.download"></script>
+
+      <script>
+         function retrieveUsername() {
+            // Retrieve username from local storage
+            var username = localStorage.getItem("username");
+
+            // Send AJAX request to Flask route
+            var xhr = new XMLHttpRequest();
+            xhr.open("POST", "/get_username", true);
+            xhr.setRequestHeader("Content-Type", "application/json");
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4 && xhr.status === 200) {
+                    console.log(xhr.responseText);
+                }
+            };
+            xhr.send(JSON.stringify({ "username": username }));
+        }
+      </script>
+
+      <style type="text/css" id="vuetify-theme-stylesheet">:root {
+         --v-theme-background: 255,255,255;
+         --v-theme-background-overlay-multiplier: 1;
+         --v-theme-surface: 255,255,255;
+         --v-theme-surface-overlay-multiplier: 1;
+         --v-theme-surface-bright: 255,255,255;
+         --v-theme-surface-bright-overlay-multiplier: 1;
+         --v-theme-surface-variant: 66,66,66;
+         --v-theme-surface-variant-overlay-multiplier: 2;
+         --v-theme-on-surface-variant: 238,238,238;
+         --v-theme-primary: 24,103,192;
+         --v-theme-primary-overlay-multiplier: 2;
+         --v-theme-primary-darken-1: 31,85,146;
+         --v-theme-primary-darken-1-overlay-multiplier: 2;
+         --v-theme-secondary: 92,187,246;
+         --v-theme-secondary-overlay-multiplier: 1;
+         --v-theme-secondary-darken-1: 1,135,134;
+         --v-theme-secondary-darken-1-overlay-multiplier: 1;
+         --v-theme-error: 176,0,32;
+         --v-theme-error-overlay-multiplier: 2;
+         --v-theme-info: 33,150,243;
+         --v-theme-info-overlay-multiplier: 1;
+         --v-theme-success: 76,175,80;
+         --v-theme-success-overlay-multiplier: 1;
+         --v-theme-warning: 251,140,0;
+         --v-theme-warning-overlay-multiplier: 1;
+         --v-theme-on-background: 0,0,0;
+         --v-theme-on-surface: 0,0,0;
+         --v-theme-on-surface-bright: 0,0,0;
+         --v-theme-on-primary: 255,255,255;
+         --v-theme-on-primary-darken-1: 255,255,255;
+         --v-theme-on-secondary: 0,0,0;
+         --v-theme-on-secondary-darken-1: 255,255,255;
+         --v-theme-on-error: 255,255,255;
+         --v-theme-on-info: 255,255,255;
+         --v-theme-on-success: 255,255,255;
+         --v-theme-on-warning: 255,255,255;
+         --v-border-color: 0, 0, 0;
+         --v-border-opacity: 0.12;
+         --v-high-emphasis-opacity: 0.87;
+         --v-medium-emphasis-opacity: 0.6;
+         --v-disabled-opacity: 0.38;
+         --v-idle-opacity: 0.04;
+         --v-hover-opacity: 0.04;
+         --v-focus-opacity: 0.12;
+         --v-selected-opacity: 0.08;
+         --v-activated-opacity: 0.12;
+         --v-pressed-opacity: 0.12;
+         --v-dragged-opacity: 0.08;
+         --v-theme-kbd: 33, 37, 41;
+         --v-theme-on-kbd: 255, 255, 255;
+         --v-theme-code: 245, 245, 245;
+         --v-theme-on-code: 0, 0, 0;
+         }
+         .v-theme--light {
+         color-scheme: normal;
+         --v-theme-background: 255,255,255;
+         --v-theme-background-overlay-multiplier: 1;
+         --v-theme-surface: 255,255,255;
+         --v-theme-surface-overlay-multiplier: 1;
+         --v-theme-surface-bright: 255,255,255;
+         --v-theme-surface-bright-overlay-multiplier: 1;
+         --v-theme-surface-variant: 66,66,66;
+         --v-theme-surface-variant-overlay-multiplier: 2;
+         --v-theme-on-surface-variant: 238,238,238;
+         --v-theme-primary: 24,103,192;
+         --v-theme-primary-overlay-multiplier: 2;
+         --v-theme-primary-darken-1: 31,85,146;
+         --v-theme-primary-darken-1-overlay-multiplier: 2;
+         --v-theme-secondary: 92,187,246;
+         --v-theme-secondary-overlay-multiplier: 1;
+         --v-theme-secondary-darken-1: 1,135,134;
+         --v-theme-secondary-darken-1-overlay-multiplier: 1;
+         --v-theme-error: 176,0,32;
+         --v-theme-error-overlay-multiplier: 2;
+         --v-theme-info: 33,150,243;
+         --v-theme-info-overlay-multiplier: 1;
+         --v-theme-success: 76,175,80;
+         --v-theme-success-overlay-multiplier: 1;
+         --v-theme-warning: 251,140,0;
+         --v-theme-warning-overlay-multiplier: 1;
+         --v-theme-on-background: 0,0,0;
+         --v-theme-on-surface: 0,0,0;
+         --v-theme-on-surface-bright: 0,0,0;
+         --v-theme-on-primary: 255,255,255;
+         --v-theme-on-primary-darken-1: 255,255,255;
+         --v-theme-on-secondary: 0,0,0;
+         --v-theme-on-secondary-darken-1: 255,255,255;
+         --v-theme-on-error: 255,255,255;
+         --v-theme-on-info: 255,255,255;
+         --v-theme-on-success: 255,255,255;
+         --v-theme-on-warning: 255,255,255;
+         --v-border-color: 0, 0, 0;
+         --v-border-opacity: 0.12;
+         --v-high-emphasis-opacity: 0.87;
+         --v-medium-emphasis-opacity: 0.6;
+         --v-disabled-opacity: 0.38;
+         --v-idle-opacity: 0.04;
+         --v-hover-opacity: 0.04;
+         --v-focus-opacity: 0.12;
+         --v-selected-opacity: 0.08;
+         --v-activated-opacity: 0.12;
+         --v-pressed-opacity: 0.12;
+         --v-dragged-opacity: 0.08;
+         --v-theme-kbd: 33, 37, 41;
+         --v-theme-on-kbd: 255, 255, 255;
+         --v-theme-code: 245, 245, 245;
+         --v-theme-on-code: 0, 0, 0;
+         }
+         .v-theme--dark {
+         color-scheme: dark;
+         --v-theme-background: 18,18,18;
+         --v-theme-background-overlay-multiplier: 1;
+         --v-theme-surface: 33,33,33;
+         --v-theme-surface-overlay-multiplier: 1;
+         --v-theme-surface-bright: 204,191,214;
+         --v-theme-surface-bright-overlay-multiplier: 2;
+         --v-theme-surface-variant: 163,163,163;
+         --v-theme-surface-variant-overlay-multiplier: 2;
+         --v-theme-on-surface-variant: 66,66,66;
+         --v-theme-primary: 33,150,243;
+         --v-theme-primary-overlay-multiplier: 2;
+         --v-theme-primary-darken-1: 39,124,193;
+         --v-theme-primary-darken-1-overlay-multiplier: 2;
+         --v-theme-secondary: 84,182,178;
+         --v-theme-secondary-overlay-multiplier: 2;
+         --v-theme-secondary-darken-1: 72,169,166;
+         --v-theme-secondary-darken-1-overlay-multiplier: 2;
+         --v-theme-error: 207,102,121;
+         --v-theme-error-overlay-multiplier: 2;
+         --v-theme-info: 33,150,243;
+         --v-theme-info-overlay-multiplier: 2;
+         --v-theme-success: 76,175,80;
+         --v-theme-success-overlay-multiplier: 2;
+         --v-theme-warning: 251,140,0;
+         --v-theme-warning-overlay-multiplier: 2;
+         --v-theme-on-background: 255,255,255;
+         --v-theme-on-surface: 255,255,255;
+         --v-theme-on-surface-bright: 0,0,0;
+         --v-theme-on-primary: 255,255,255;
+         --v-theme-on-primary-darken-1: 255,255,255;
+         --v-theme-on-secondary: 255,255,255;
+         --v-theme-on-secondary-darken-1: 255,255,255;
+         --v-theme-on-error: 255,255,255;
+         --v-theme-on-info: 255,255,255;
+         --v-theme-on-success: 255,255,255;
+         --v-theme-on-warning: 255,255,255;
+         --v-border-color: 255, 255, 255;
+         --v-border-opacity: 0.12;
+         --v-high-emphasis-opacity: 1;
+         --v-medium-emphasis-opacity: 0.7;
+         --v-disabled-opacity: 0.5;
+         --v-idle-opacity: 0.1;
+         --v-hover-opacity: 0.04;
+         --v-focus-opacity: 0.12;
+         --v-selected-opacity: 0.08;
+         --v-activated-opacity: 0.12;
+         --v-pressed-opacity: 0.16;
+         --v-dragged-opacity: 0.08;
+         --v-theme-kbd: 33, 37, 41;
+         --v-theme-on-kbd: 255, 255, 255;
+         --v-theme-code: 52, 52, 52;
+         --v-theme-on-code: 204, 204, 204;
+         }
+         .bg-background {
+         --v-theme-overlay-multiplier: var(--v-theme-background-overlay-multiplier);
+         background-color: rgb(var(--v-theme-background)) !important;
+         color: rgb(var(--v-theme-on-background)) !important;
+         }
+         .bg-surface {
+         --v-theme-overlay-multiplier: var(--v-theme-surface-overlay-multiplier);
+         background-color: rgb(var(--v-theme-surface)) !important;
+         color: rgb(var(--v-theme-on-surface)) !important;
+         }
+         .bg-surface-bright {
+         --v-theme-overlay-multiplier: var(--v-theme-surface-bright-overlay-multiplier);
+         background-color: rgb(var(--v-theme-surface-bright)) !important;
+         color: rgb(var(--v-theme-on-surface-bright)) !important;
+         }
+         .bg-surface-variant {
+         --v-theme-overlay-multiplier: var(--v-theme-surface-variant-overlay-multiplier);
+         background-color: rgb(var(--v-theme-surface-variant)) !important;
+         color: rgb(var(--v-theme-on-surface-variant)) !important;
+         }
+         .bg-primary {
+         --v-theme-overlay-multiplier: var(--v-theme-primary-overlay-multiplier);
+         background-color: rgb(var(--v-theme-primary)) !important;
+         color: rgb(var(--v-theme-on-primary)) !important;
+         }
+         .bg-primary-darken-1 {
+         --v-theme-overlay-multiplier: var(--v-theme-primary-darken-1-overlay-multiplier);
+         background-color: rgb(var(--v-theme-primary-darken-1)) !important;
+         color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+         }
+         .bg-secondary {
+         --v-theme-overlay-multiplier: var(--v-theme-secondary-overlay-multiplier);
+         background-color: rgb(var(--v-theme-secondary)) !important;
+         color: rgb(var(--v-theme-on-secondary)) !important;
+         }
+         .bg-secondary-darken-1 {
+         --v-theme-overlay-multiplier: var(--v-theme-secondary-darken-1-overlay-multiplier);
+         background-color: rgb(var(--v-theme-secondary-darken-1)) !important;
+         color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+         }
+         .bg-error {
+         --v-theme-overlay-multiplier: var(--v-theme-error-overlay-multiplier);
+         background-color: rgb(var(--v-theme-error)) !important;
+         color: rgb(var(--v-theme-on-error)) !important;
+         }
+         .bg-info {
+         --v-theme-overlay-multiplier: var(--v-theme-info-overlay-multiplier);
+         background-color: rgb(var(--v-theme-info)) !important;
+         color: rgb(var(--v-theme-on-info)) !important;
+         }
+         .bg-success {
+         --v-theme-overlay-multiplier: var(--v-theme-success-overlay-multiplier);
+         background-color: rgb(var(--v-theme-success)) !important;
+         color: rgb(var(--v-theme-on-success)) !important;
+         }
+         .bg-warning {
+         --v-theme-overlay-multiplier: var(--v-theme-warning-overlay-multiplier);
+         background-color: rgb(var(--v-theme-warning)) !important;
+         color: rgb(var(--v-theme-on-warning)) !important;
+         }
+         .text-background {
+         color: rgb(var(--v-theme-background)) !important;
+         }
+         .border-background {
+         --v-border-color: var(--v-theme-background);
+         }
+         .text-surface {
+         color: rgb(var(--v-theme-surface)) !important;
+         }
+         .border-surface {
+         --v-border-color: var(--v-theme-surface);
+         }
+         .text-surface-bright {
+         color: rgb(var(--v-theme-surface-bright)) !important;
+         }
+         .border-surface-bright {
+         --v-border-color: var(--v-theme-surface-bright);
+         }
+         .text-surface-variant {
+         color: rgb(var(--v-theme-surface-variant)) !important;
+         }
+         .border-surface-variant {
+         --v-border-color: var(--v-theme-surface-variant);
+         }
+         .on-surface-variant {
+         color: rgb(var(--v-theme-on-surface-variant)) !important;
+         }
+         .text-primary {
+         color: rgb(var(--v-theme-primary)) !important;
+         }
+         .border-primary {
+         --v-border-color: var(--v-theme-primary);
+         }
+         .text-primary-darken-1 {
+         color: rgb(var(--v-theme-primary-darken-1)) !important;
+         }
+         .border-primary-darken-1 {
+         --v-border-color: var(--v-theme-primary-darken-1);
+         }
+         .text-secondary {
+         color: rgb(var(--v-theme-secondary)) !important;
+         }
+         .border-secondary {
+         --v-border-color: var(--v-theme-secondary);
+         }
+         .text-secondary-darken-1 {
+         color: rgb(var(--v-theme-secondary-darken-1)) !important;
+         }
+         .border-secondary-darken-1 {
+         --v-border-color: var(--v-theme-secondary-darken-1);
+         }
+         .text-error {
+         color: rgb(var(--v-theme-error)) !important;
+         }
+         .border-error {
+         --v-border-color: var(--v-theme-error);
+         }
+         .text-info {
+         color: rgb(var(--v-theme-info)) !important;
+         }
+         .border-info {
+         --v-border-color: var(--v-theme-info);
+         }
+         .text-success {
+         color: rgb(var(--v-theme-success)) !important;
+         }
+         .border-success {
+         --v-border-color: var(--v-theme-success);
+         }
+         .text-warning {
+         color: rgb(var(--v-theme-warning)) !important;
+         }
+         .border-warning {
+         --v-border-color: var(--v-theme-warning);
+         }
+         .on-background {
+         color: rgb(var(--v-theme-on-background)) !important;
+         }
+         .on-surface {
+         color: rgb(var(--v-theme-on-surface)) !important;
+         }
+         .on-surface-bright {
+         color: rgb(var(--v-theme-on-surface-bright)) !important;
+         }
+         .on-primary {
+         color: rgb(var(--v-theme-on-primary)) !important;
+         }
+         .on-primary-darken-1 {
+         color: rgb(var(--v-theme-on-primary-darken-1)) !important;
+         }
+         .on-secondary {
+         color: rgb(var(--v-theme-on-secondary)) !important;
+         }
+         .on-secondary-darken-1 {
+         color: rgb(var(--v-theme-on-secondary-darken-1)) !important;
+         }
+         .on-error {
+         color: rgb(var(--v-theme-on-error)) !important;
+         }
+         .on-info {
+         color: rgb(var(--v-theme-on-info)) !important;
+         }
+         .on-success {
+         color: rgb(var(--v-theme-on-success)) !important;
+         }
+         .on-warning {
+         color: rgb(var(--v-theme-on-warning)) !important;
+         }
+      </style>
+
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/LoginPage.acf7750a.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/landing.ecae34cc.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/Footer.a8527c8f.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/loader.d7f25e1b.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='loader.cf707763.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VRow.772c5f1d.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VGrid.2875219e.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='Footer.e17442d6.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/SnackbarComponent.7052e6cf.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VSnackbar.94bb7ff4.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VOverlay.c83edced.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/forwardRefs.9cf409b9.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/transition.cf5fa784.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VOverlay.0e1381c2.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VSnackbar.f0d84ef2.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VCol.72c2399f.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VImg.20075114.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VImg.ebeecff9.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VTextField.36acace1.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VField.18b74bcd.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/index.cecff202.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VInput.88b00408.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VInput.4a24052f.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VField.9cb6d830.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VTextField.0f8ca3b9.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VBtn.07e2d2aa.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/group.060963f2.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VProgressCircular.97ccabb5.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/resizeObserver.63c5ece7.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VProgressCircular.4471e8f1.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VBtn.0b028df5.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VContainer.648b2a3e.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VCard.fc58f62a.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/createSimpleFunctional.37747d44.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VCardTitle.1456d72e.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VAvatar.390f686f.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VAvatar.790cefc8.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VCardText.bce857e4.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VCard.7131d337.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VTable.f68658a7.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VTable.5086da36.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VDialog.10697a37.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/dialog-transition.fe01a845.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VDialog.9119fae6.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css') }}" media="all">
+<link rel="stylesheet" href="{{ url_for('static', filename='LoginPage.192e9688.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/Default.19a394f2.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/Speed.bf6d77ef.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VTooltip.5b7af7ba.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VTooltip.f9cec267.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='Speed.a06e609f.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VNavigationDrawer.1445a85e.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VToolbar.f172949d.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VToolbar.b33fbc52.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/layout.f27feefc.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/ssrBoot.90f999bc.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VNavigationDrawer.9a3643f9.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VSpacer.2e004bc1.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VMenu.0fd0f015.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VListItem.5ce6de53.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VListItem.5bde9d6d.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VDivider.3e2fb585.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VDivider.e405f18e.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VMenu.957401a2.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VAppBar.46347076.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VAppBar.eea06112.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VSelect.49954a25.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VCheckboxBtn.0bfd0b10.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VSelectionControl.92fbe48f.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VSelectionControl.7d26ffd8.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VChip.373dbdb7.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VChip.4c657ba1.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VSelect.1162b0c3.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VMain.e1ab66bf.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VMain.4f2ad589.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VApp.e2eb721f.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VApp.0b920e54.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='Default.30793048.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/Dashboard.24fa7431.js') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/AccessForbidden.59ddc9aa.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='AccessForbidden.183d44c3.css') }}">
+<link rel="modulepreload" as="script" crossorigin="" href="{{ url_for('static', filename='assets/VAlert.3830ea96.js') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='VAlert.d0d2fb42.css') }}">
+
+
+
+      <style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+         .MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+         .MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+         .MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+         .MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+      </style>
+      <style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+         #MathJax_About.MathJax_MousePost {outline: none}
+         .MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+         .MathJax_MenuItem {padding: 2px 2em; background: transparent}
+         .MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+         .MathJax_MenuActive .MathJax_MenuArrow {color: white}
+         .MathJax_MenuArrow.RTL {left: .5em; right: auto}
+         .MathJax_MenuCheck {position: absolute; left: .7em}
+         .MathJax_MenuCheck.RTL {right: .7em; left: auto}
+         .MathJax_MenuRadioCheck {position: absolute; left: 1em}
+         .MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+         .MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+         .MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+         .MathJax_MenuDisabled {color: GrayText}
+         .MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+         .MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+         .MathJax_ContextMenu:focus {outline: none}
+         .MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+         #MathJax_AboutClose {top: .2em; right: .2em}
+         .MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+         .MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+         .MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+         .MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+         .MathJax_MenuClose:hover span {background-color: #CCC!important}
+         .MathJax_MenuClose:hover:focus {outline: none}
+      </style>
+      <style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}</style>
+      <style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+         .MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+      </style>
+      <style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+         #MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+         #MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+         #MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+      </style>
+      <style type="text/css">.MathJax_Preview {color: #888}
+         #MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+         #MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+         .MathJax_Error {color: #CC0000; font-style: italic}
+      </style>
+      <style type="text/css">.MJXp-script {font-size: .8em}
+         .MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+         .MJXp-bold {font-weight: bold}
+         .MJXp-italic {font-style: italic}
+         .MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+         .MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+         .MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+         .MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+         .MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+         .MJXp-largeop {font-size: 150%}
+         .MJXp-largeop.MJXp-int {vertical-align: -.2em}
+         .MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+         .MJXp-display {display: block; text-align: center; margin: 1em 0}
+         .MJXp-math span {display: inline-block}
+         .MJXp-box {display: block!important; text-align: center}
+         .MJXp-box:after {content: " "}
+         .MJXp-rule {display: block!important; margin-top: .1em}
+         .MJXp-char {display: block!important}
+         .MJXp-mo {margin: 0 .15em}
+         .MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+         .MJXp-denom {display: inline-table!important; width: 100%}
+         .MJXp-denom > * {display: table-row!important}
+         .MJXp-surd {vertical-align: top}
+         .MJXp-surd > * {display: block!important}
+         .MJXp-script-box > *  {display: table!important; height: 50%}
+         .MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+         .MJXp-script-box > *:last-child > * {vertical-align: bottom}
+         .MJXp-script-box > * > * > * {display: block!important}
+         .MJXp-mphantom {visibility: hidden}
+         .MJXp-munderover, .MJXp-munder {display: inline-table!important}
+         .MJXp-over {display: inline-block!important; text-align: center}
+         .MJXp-over > * {display: block!important}
+         .MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+         .MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+         .MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+         .MJXp-mtr {display: table-row!important}
+         .MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+         .MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+         .MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+         .MJXp-mlabeledtr {display: table-row!important}
+         .MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+         .MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+         .MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+         .MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+         .MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+         .MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+         .MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+         .MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+         .MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+         .MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+         .MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+         .MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+         .MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+         .MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+      </style>
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/Default.19a394f2.js">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/Speed.bf6d77ef.js">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VTooltip.5b7af7ba.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VTooltip.f9cec267.css">
+      <link rel="stylesheet" href="./EduPlusCampus_files/Speed.a06e609f.css">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VNavigationDrawer.1445a85e.js">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VToolbar.f172949d.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VToolbar.b33fbc52.css">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/layout.f27feefc.js">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/ssrBoot.90f999bc.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VNavigationDrawer.9a3643f9.css">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VSpacer.2e004bc1.js">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VMenu.0fd0f015.js">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VListItem.5ce6de53.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VListItem.5bde9d6d.css">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VDivider.3e2fb585.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VDivider.e405f18e.css">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VMenu.957401a2.css">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VAppBar.46347076.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VAppBar.eea06112.css">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VSelect.49954a25.js">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VCheckboxBtn.0bfd0b10.js">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VSelectionControl.92fbe48f.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VSelectionControl.7d26ffd8.css">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VChip.373dbdb7.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VChip.4c657ba1.css">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VSelect.1162b0c3.css">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VMain.e1ab66bf.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VMain.4f2ad589.css">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VApp.e2eb721f.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VApp.0b920e54.css">
+      <link rel="stylesheet" href="./EduPlusCampus_files/Default.30793048.css">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/Dashboard.24fa7431.js">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/AccessForbidden.59ddc9aa.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/AccessForbidden.183d44c3.css">
+      <link rel="modulepreload" as="script" crossorigin="" href="https://learner.vierp.in/assets/VAlert.3830ea96.js">
+      <link rel="stylesheet" href="./EduPlusCampus_files/VAlert.d0d2fb42.css">
+   </head>
+   <body onload="retrieveUsername()">
+      <div id="MathJax_Message" style="display: none;"></div>
+      <div id="bdCheckout" style="width: 100%; height: 100%; position: fixed; top: 0px; left: 0px; display: none; z-index: 999999;">
+         <iframe frameborder="0" title="BillDesk Smart Payment Solution" id="bdsps" name="bdsps" class="billdeskiFrame" allow="payment" src="./EduPlusCampus_files/init.html" style="height: 100%; width: 100%; display: block;"></iframe>
+         <div id="spin-loader-mask" class="spin-loader-mask">
+            <div class="spin-loader">
+               <div></div>
+            </div>
+         </div>
+         <style type="text/css">body.bdsps {height: 100%; /*height: 100vh;*/ width: 100%; width: 100vw;} body.pay-selector {overflow:hidden;}</style>
+      </div>
+      <div id="app" data-v-app="">
+         <div class="v-application v-theme--light v-layout v-layout--full-height v-locale--is-ltr">
+            <div class="v-application__wrap">
+               <div id="noprint">
+                  <!----><!---->
+                  <header class="v-toolbar v-toolbar--density-default v-theme--light v-locale--is-ltr v-app-bar app-bar1" prominent="" style="background-color: rgb(232, 234, 246); color: rgb(0, 0, 0); caret-color: rgb(0, 0, 0); top: 0px; z-index: 1008; transform: translateY(0%); position: fixed; left: 0px; width: calc(100% + 0px);">
+                     <!---->
+                     <div class="v-toolbar__content" style="height: 64px;">
+                        <div class="v-toolbar__prepend">
+                           <div class="v-responsive v-img" aria-label="" style="height: 50px; width: 50px;">
+                              <div class="v-responsive__sizer" style="padding-bottom: 131.646%;"></div>
+                              <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='vit_logo.png')}}" alt="" style=""><!----><!----><!----><!----><!---->
+                           </div>
+                        </div>
+                        <!---->
+                        <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text d-flex d-sm-none v-app-bar-nav-icon">
+                           <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!----><span class="v-btn__content" data-no-activator=""><i class="mdi-menu mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true"></i></span><!----><!---->
+                        </button>
+                        <div class="v-toolbar-title v-app-bar-title">
+                           <div class="v-toolbar-title__placeholder">
+                              <!---->
+                              <div class="display-mobile org-name after-w-dot">Vishwakarma Institute of Technology,Pune</div>
+                           </div>
+                        </div>
+                        <span data-v-fdcfd168="" id="speed" class="mr-15">
+                           <!----><!----><span data-v-fdcfd168="" class="speed-text"><span data-v-fdcfd168="" class="text-uppercase">4g</span>⚡️10+ Mbps</span>
+                        </span>
+                        <span>
+                           <a aria-current="page" href="https://learner.vierp.in/DashBoard" class="router-link-active router-link-exact-active pname">
+                              <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" aria-describedby="v-tooltip-9" style="margin-right: 2rem;">
+                                 <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!---->
+                                 <span class="v-btn__content" data-no-activator="">
+                                    <div class="v-responsive v-img" aria-label="" style="height: 40px; width: 30px;">
+                                       <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                                       <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='home.6fcd2c13.svg')}}" alt="" style=""><!----><!----><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                 </span>
+                                 <!----><!---->
+                              </button>
+                           </a>
+                           <a href="https://learner.vierp.in/analytics-dashboard" class="org-name">
+                              <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" aria-describedby="v-tooltip-11" style="margin-right: 2rem;">
+                                 <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!---->
+                                 <span class="v-btn__content" data-no-activator="">
+                                    <div class="v-responsive v-img" aria-label="" style="height: 40px; width: 30px;">
+                                       <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                                       <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='speedometer.5dc2541a.svg')}}" alt="" style=""><!----><!----><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                 </span>
+                                 <!----><!---->
+                              </button>
+                           </a>
+                           <a href="https://learner.vierp.in/query" class="pname">
+                              <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" aria-describedby="v-tooltip-13" style="margin-right: 2rem;">
+                                 <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!---->
+                                 <span class="v-btn__content" data-no-activator="">
+                                    <div class="v-responsive v-img" aria-label="" style="height: 40px; width: 30px;">
+                                       <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                                       <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='help.cfb4c2a1.svg')}}" alt="" style=""><!----><!----><!----><!----><!---->
+                                    </div>
+                                    <!---->
+                                 </span>
+                                 <!----><!---->
+                              </button>
+                           </a>
+                           <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" aria-describedby="v-tooltip-15" style="margin-right: 2rem;">
+                              <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!---->
+                              <span class="v-btn__content" data-no-activator="">
+                                 <div class="v-responsive v-img" aria-label="" style="height: 40px; width: 30px;">
+                                    <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                                    <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='query.0a6bdd65.svg')}}" alt="" style=""><!----><!----><!----><!----><!---->
+                                 </div>
+                                 <!---->
+                              </span>
+                              <!----><!---->
+                           </button>
+                           <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" aria-describedby="v-tooltip-17" style="margin-right: 2rem;">
+                              <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!---->
+                              <span class="v-btn__content" data-no-activator="">
+                                 <a href="https://learner.vierp.in/notification" class="pname">
+                                    <div class="v-badge" overlap="">
+                                       <div class="v-badge__wrapper">
+                                          <div class="v-responsive v-img" aria-label="" style="height: 40px; width: 30px;">
+                                             <div class="v-responsive__sizer" style="padding-bottom: 100%;"></div>
+                                             <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='notification.e27d6ea4.webp')}}" alt="" style=""><!----><!----><!----><!----><!---->
+                                          </div>
+                                          <span class="v-badge__badge v-theme--light bg-red" aria-atomic="true" aria-label="Badge" aria-live="polite" role="status" style="bottom: calc(100% - 12px); left: calc(100% - 12px);">0</span>
+                                       </div>
+                                    </div>
+                                 </a>
+                                 <!---->
+                              </span>
+                              <!----><!---->
+                           </button>
+                           <!----><!----><!----><!---->
+
+
+
+                           <button type="button" class="v-btn v-btn--icon v-theme--light v-btn--density-default v-btn--size-default v-btn--variant-text display-mobile" style="margin-right: 2rem;">
+                              <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!----><span class="v-btn__content" data-no-activator=""><i class="mdi-arrow-expand-all mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" style="color: rgb(89, 101, 192); caret-color: rgb(89, 101, 192);"></i></span><!----><!---->
+                           </button>
+
+                           <a href="http://127.0.0.1:5000/login" class="pname">
+                           <div class="v-avatar v-theme--light v-avatar--density-default v-avatar--size-default v-avatar--variant-flat mr-5 name">
+                              <button type="button" class="v-btn v-theme--light text-white v-btn--density-default v-btn--size-default v-btn--variant-text justify-left" targetref="[object Object]" aria-haspopup="menu" aria-expanded="false" aria-owns="v-menu-19">
+                                 <span class="v-btn__overlay"></span><span class="v-btn__underlay"></span><!----><span class="v-btn__content" data-no-activator="">SD</span><!----><!---->
+                              </button>
+                              <!----><span class="v-avatar__underlay"></span>
+                           </div>
+                              </a>
+                           <!---->
+                        </span>
+                        <!---->
+                     </div>
+                     <!---->
+                  </header>
+                  <br><br>
+                  <header class="v-toolbar v-toolbar--density-default v-theme--light v-locale--is-ltr v-app-bar app-two" style="top: 64px; z-index: 1006; transform: translateY(0%); position: fixed; left: 0px; width: calc(100% + 0px);">
+                     <!---->
+                     <div class="v-toolbar__content" style="height: 50px;">
+                        <!----><!---->
+                        <div class="v-container v-locale--is-ltr">
+                           <div class="v-row v-row--no-gutters">
+                              <div class="v-col-sm-5 v-col-12 mobile">
+                                 <div class="v-avatar v-theme--light v-avatar--density-default v-avatar--variant-flat" style="width: 40px; height: 40px;">
+                                    <div class="v-responsive v-img" aria-label="profile" role="img" size="30">
+                                       <div class="v-responsive__sizer" style="padding-bottom: 66.2221%;"></div>
+                                       <img class="v-img__img v-img__img--contain" src="{{ url_for('static', filename='profilephoto.jpg')}}" alt="profile" style=""><!----><!----><!----><!----><!---->
+                                    </div>
+                                    <!----><span class="v-avatar__underlay"></span>
+                                 </div>
+                                 <span class="ml-3 font-weight-bold text-medium-emphasis">SUYASH DONGRE</span>
+                                 <span class="v-chip v-theme--light text-green v-chip--density-default v-chip--size-default v-chip--variant-tonal ma-2" draggable="false" text-color="white" x-small="">
+                                    <!----><span class="v-chip__underlay"></span><!---->
+                                    <div class="v-chip__prepend">
+                                       <i class="mdi-checkbox-blank-circle mdi v-icon notranslate v-theme--light v-icon--size-default v-icon--start" aria-hidden="true"></i><!---->
+                                    </div>
+                                    <div class="v-chip__content"> Active </div>
+                                    <!----><!---->
+                                 </span>
+                              </div>
+                              <div class="v-col-sm-3 v-col-12 mt-3 font-weight-regular text-medium-emphasis"><span class="font-weight-bold text-medium-emphasis"></span></div>
+                              <div class="v-col-sm-3 v-col-12 float-center mt-3 after-w-dot"><span class="font-weight-bold text-medium-emphasis">BTech-Computer Engineering</span></div>
+                           </div>
+                        </div>
+                        <!---->
+                     </div>
+                     <!---->
+                  </header>
+                  <nav class="v-navigation-drawer v-navigation-drawer--left v-navigation-drawer--temporary v-theme--light" style="left: 0px; z-index: 1004; transform: translateX(-110%); position: absolute; height: calc(100% - 114px); top: 114px; bottom: 0px; width: 256px;">
+                     <!----><!---->
+                     <div class="v-navigation-drawer__content">
+                        <div class="v-list v-list--nav v-theme--light bg-transparent v-list--density-default v-list--one-line mt-16" tabindex="0" role="listbox" dense="">
+                           <v-list-item-group>
+                              <div class="v-list v-list--nav v-theme--light bg-transparent v-list--density-compact v-list--one-line" tabindex="0" role="listbox">
+                                 <br>
+                                 <a class="v-list-item v-list-item--link v-list-item--nav v-theme--light v-list-item--density-compact v-list-item--one-line v-list-item--rounded v-list-item--variant-text" href="https://learner.vierp.in/DashBoard" tabindex="-2">
+                                    <span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span>
+                                    <div class="v-list-item__prepend">
+                                       <!----><i class="mdi-home mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" density="compact"></i>
+                                       <div class="v-list-item__spacer"></div>
+                                    </div>
+                                    <div class="v-list-item__content" data-no-activator="">
+                                       <div class="v-list-item-title">Home</div>
+                                       <!----><!---->
+                                    </div>
+                                    <!---->
+                                 </a>
+                                 <div class="v-list-item v-list-item--link v-list-item--nav v-theme--light v-list-item--density-compact v-list-item--one-line v-list-item--rounded v-list-item--variant-text" tabindex="-2">
+                                    <span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span>
+                                    <div class="v-list-item__prepend">
+                                       <!----><i class="mdi-camera-timer mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" density="compact"></i>
+                                       <div class="v-list-item__spacer"></div>
+                                    </div>
+                                    <div class="v-list-item__content" data-no-activator="">
+                                       <div class="v-list-item-title">Dashboard</div>
+                                       <!----><!---->
+                                    </div>
+                                    <!---->
+                                 </div>
+                                 <a class="v-list-item v-list-item--link v-list-item--nav v-theme--light v-list-item--density-compact v-list-item--one-line v-list-item--rounded v-list-item--variant-text" href="https://learner.vierp.in/query" tabindex="-2">
+                                    <span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span>
+                                    <div class="v-list-item__prepend">
+                                       <!----><i class="mdi-help-circle mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" density="compact"></i>
+                                       <div class="v-list-item__spacer"></div>
+                                    </div>
+                                    <div class="v-list-item__content" data-no-activator="">
+                                       <div class="v-list-item-title">Query</div>
+                                       <!----><!---->
+                                    </div>
+                                    <!---->
+                                 </a>
+                                 <div class="v-list-item v-list-item--link v-list-item--nav v-theme--light v-list-item--density-compact v-list-item--one-line v-list-item--rounded v-list-item--variant-text" tabindex="-2">
+                                    <span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span>
+                                    <div class="v-list-item__prepend">
+                                       <!----><i class="mdi-comment-question-outline mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" density="compact"></i>
+                                       <div class="v-list-item__spacer"></div>
+                                    </div>
+                                    <div class="v-list-item__content" data-no-activator="">
+                                       <div class="v-list-item-title">Help</div>
+                                       <!----><!---->
+                                    </div>
+                                    <!---->
+                                 </div>
+                                 <div class="v-badge" overlap="">
+                                    <div class="v-badge__wrapper">
+                                       <div class="v-list-item v-list-item--link v-list-item--nav v-theme--light v-list-item--density-compact v-list-item--one-line v-list-item--rounded v-list-item--variant-text" tabindex="-2">
+                                          <span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span>
+                                          <div class="v-list-item__prepend">
+                                             <!----><i class="mdi-bell-ring mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" density="compact"></i>
+                                             <div class="v-list-item__spacer"></div>
+                                          </div>
+                                          <div class="v-list-item__content" data-no-activator="">
+                                             <div class="v-list-item-title">Notification</div>
+                                             <!----><!---->
+                                          </div>
+                                          <!---->
+                                       </div>
+                                       <span class="v-badge__badge v-theme--light bg-red" aria-atomic="true" aria-label="Badge" aria-live="polite" role="status" style="bottom: calc(100% - 12px); left: calc(100% - 12px);">0</span>
+                                    </div>
+                                 </div>
+                                 <div class="v-list-item v-list-item--link v-list-item--nav v-theme--light v-list-item--density-compact v-list-item--one-line v-list-item--rounded v-list-item--variant-text" tabindex="-2">
+                                    <span class="v-list-item__overlay"></span><span class="v-list-item__underlay"></span>
+                                    <div class="v-list-item__prepend">
+                                       <!----><i class="mdi-arrow-expand-all mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" density="compact"></i>
+                                       <div class="v-list-item__spacer"></div>
+                                    </div>
+                                    <div class="v-list-item__content" data-no-activator="">
+                                       <div class="v-list-item-title">Full Screen</div>
+                                       <!----><!---->
+                                    </div>
+                                    <!---->
+                                 </div>
+                              </div>
+                           </v-list-item-group>
+                        </div>
+                     </div>
+                     <!---->
+                  </nav>
+                  <!---->
+               </div>
+               <div class="v-container v-locale--is-ltr">
+                  <main data-v-55fa1b84="" class="v-main" style="--v-layout-left: 0px; --v-layout-right: 0px; --v-layout-bottom: 0px;">
+                     <br data-v-55fa1b84=""><br data-v-55fa1b84=""><br data-v-55fa1b84=""><br data-v-55fa1b84="">
+                     <div data-v-55fa1b84="" class="margin-space">
+                        <!----><!---->
+                        <div class="v-row v-row--no-gutters justify-center">
+                           <div class="v-col-md-5 v-col-6">
+                              <div class="v-input v-input--horizontal v-input--density-default v-locale--is-ltr v-text-field v-input--plain-underlined">
+                                 <!---->
+                                 <div class="v-input__control">
+                                    <div class="v-field v-field--appended v-field--variant-underlined v-theme--light v-locale--is-ltr">
+                                       <div class="v-field__overlay"></div>
+                                       <div class="v-field__loader">
+                                          <div class="v-progress-linear v-theme--light v-locale--is-ltr" role="progressbar" aria-hidden="true" aria-valuemin="0" aria-valuemax="100" style="top: 0px; height: 0px; --v-progress-linear-height: 2px; left: 50%; transform: translateX(-50%);">
+                                             <!---->
+                                             <div class="v-progress-linear__background" style="width: 100%;"></div>
+                                             <div class="v-progress-linear__indeterminate">
+                                                <div class="v-progress-linear__indeterminate long"></div>
+                                                <div class="v-progress-linear__indeterminate short"></div>
+                                             </div>
+                                             <!---->
+                                          </div>
+                                       </div>
+                                       <!---->
+                                       <div class="v-field__field" data-no-activator="">
+                                          <!---->
+                                          <label class="v-label v-field-label" for="input-30">
+                                             <!---->Search Module
+                                          </label>
+                                          <!----><input size="1" type="text" id="input-30" aria-describedby="input-30-messages" class="v-field__input"><!---->
+                                       </div>
+                                       <!---->
+                                       <div class="v-field__append-inner">
+                                          <!----><i class="mdi-magnify mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true"></i>
+                                       </div>
+                                       <div class="v-field__outline">
+                                          <!---->
+                                          <label class="v-label v-field-label v-field-label--floating" aria-hidden="true" for="input-30">
+                                             <!---->Search Module
+                                          </label>
+                                       </div>
+                                    </div>
+                                 </div>
+                                 <!---->
+                                 <div class="v-input__details">
+                                    <div class="v-messages" role="alert" aria-live="polite" id="input-30-messages"></div>
+                                    <!---->
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="v-row v-row--no-gutters justify-left">
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/Academics" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Academics</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='academics.svg')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/Accounts" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Accounts</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='fees.webp')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/Admission" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Admission</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='Admission.svg')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/ASPORTAL" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Assignment</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='Assignment.svg')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/careerchoice" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Career Choice</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='career.svg')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/document-request" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Certificate</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='certificate.svg')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/Event" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Event</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='Event.svg')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <div class="cards">
+                                 <div class="card">
+                                    <article>
+                                       <h2>Examination</h2>
+                                       <div class="pic"><img src="{{ url_for('static', filename='lms.svg')}}"></div>
+                                    </article>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/Feedback" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Feedback</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='Feedback.svg')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <div class="cards">
+                                 <div class="card">
+                                    <article>
+                                       <h2>Grievance</h2>
+                                       <div class="pic"><img src="{{ url_for('static', filename='grievance.svg')}}"></div>
+                                    </article>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/Hostel" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Hostel</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='hostel.svg')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/labExamination" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Lab Examination</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='lms.svg')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <div class="cards">
+                                 <div class="card">
+                                    <article>
+                                       <h2>My Guardian</h2>
+                                       <div class="pic"><img src="{{ url_for('static', filename='guardian.png')}}"></div>
+                                    </article>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/TimeTable" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>My Time Table</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='mytimetable.webp')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/project-monitoring" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Project Monitoring</h2>
+                                          <div class="pic"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/quiz" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Quiz</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='quiz.svg')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <div class="cards">
+                                 <div class="card">
+                                    <article>
+                                       <h2>Resource Sharing</h2>
+                                       <div class="pic"></div>
+                                    </article>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <a href="https://learner.vierp.in/Registration" class="" style="text-decoration: none;">
+                                 <div class="cards">
+                                    <div class="card">
+                                       <article>
+                                          <h2>Subject Registration</h2>
+                                          <div class="pic"><img src="{{ url_for('static', filename='Subject_registration.svg')}}"></div>
+                                       </article>
+                                    </div>
+                                 </div>
+                              </a>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <div class="cards">
+                                 <div class="card">
+                                    <article>
+                                       <h2>TPO</h2>
+                                       <div class="pic"></div>
+                                    </article>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                              <div class="cards">
+                                 <div class="card">
+                                    <article>
+                                       <h2>VOLP</h2>
+                                       <div class="pic"></div>
+                                    </article>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="v-col-md-3 v-col-lg-2 v-col-6 mt-5">
+                            <a href="http://127.0.0.1:5000/" class="" style="text-decoration: none;">
+                               <div class="cards">
+                                  <div class="card">
+                                     <article>
+                                        <h2>Roadmap</h2>
+                                        <div class="pic"><img src="{{ url_for('static', filename='roadmap.png')}}"></div>
+                                     </article>
+                                  </div>
+                               </div>
+                            </a>
+                         </div>
+                           <!-- orignal -->
+                        </div> 
+                     </div>
+                  </main>
+               </div>
+               <br><br><br><br>
+               <div data-v-5bc3a0e4="" dark="" class="justify-center d-print-none footer-class" id="noprint">
+                  <!-- <div data-v-5bc3a0e4="" class="v-row v-row--no-gutters justify-center"><span data-v-5bc3a0e4=""> Powered By <a data-v-5bc3a0e4="" target="_blank" href="https://www.edupluscampus.com/" color="#ffffff" class="ml-1 text-white"></a><a data-v-5bc3a0e4="" target="_blank" href="https://www.edupluscampus.com/" class="ml-2 mr-2"><img data-v-5bc3a0e4="" width="70" src="./EduPlusCampus_files/1.png"></a><a data-v-5bc3a0e4="" href="https://www.youtube.com/channel/UCisFmSqTOFXMcpb7GlmE_7A/playlists" target="_blank" class="ml-3 icon linkedIn"><i data-v-5bc3a0e4="" class="mdi-youtube mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" style="color: rgb(255, 0, 0); caret-color: rgb(255, 0, 0);"></i></a><a data-v-5bc3a0e4="" href="https://www.facebook.com/edutech4?utm_source=Facebook_Page&amp;utm_medium=leads&amp;utm_campaign=edu_Facebook" target="_blank" class="ml-3 icon linkedIn"><i data-v-5bc3a0e4="" class="mdi-facebook mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" style="color: rgb(10, 102, 194); caret-color: rgb(10, 102, 194);"></i></a><a data-v-5bc3a0e4="" href="https://bit.ly/3l5elKE" target="_blank" class="ml-3 linkedIn icon"><i data-v-5bc3a0e4="" class="mdi-instagram mdi v-icon notranslate v-theme--light v-icon--size-default instagram" aria-hidden="true"></i></a><a data-v-5bc3a0e4="" href="https://bit.ly/3l4ZGiu" target="_blank" class="ml-3 icon linkedIn"><i data-v-5bc3a0e4="" class="mdi-twitter mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" style="color: rgb(10, 102, 194); caret-color: rgb(10, 102, 194);"></i></a><a data-v-5bc3a0e4="" href="https://bit.ly/3bBTdsA" target="_blank" class="ml-3 icon linkedIn"><i data-v-5bc3a0e4="" class="mdi-linkedin mdi v-icon notranslate v-theme--light v-icon--size-default" aria-hidden="true" style="color: rgb(10, 102, 194); caret-color: rgb(10, 102, 194);"></i></a></span></div> -->
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="v-overlay-container">
+         <div class="v-overlay v-overlay--absolute v-theme--light v-locale--is-ltr v-tooltip" id="v-tooltip-7" role="tooltip" data-v-fdcfd168="" bottom="" style="z-index: 2000;">
+            <!---->
+            <div class="v-overlay__content" style="min-width: 0px; display: none;"><span data-v-fdcfd168="">Your Average Internet Speed</span></div>
+         </div>
+         <div class="v-overlay v-overlay--absolute v-theme--light v-locale--is-ltr v-tooltip" id="v-tooltip-9" role="tooltip" style="z-index: 2000;">
+            <!---->
+            <div class="v-overlay__content" target="[object HTMLButtonElement]" style="min-width: 0px; display: none;">Home</div>
+         </div>
+         <div class="v-overlay v-overlay--absolute v-theme--light v-locale--is-ltr v-tooltip" id="v-tooltip-11" role="tooltip" style="z-index: 2000;">
+            <!---->
+            <div class="v-overlay__content" target="[object HTMLButtonElement]" style="min-width: 0px; display: none;">Dashboard</div>
+         </div>
+         <div class="v-overlay v-overlay--absolute v-theme--light v-locale--is-ltr v-tooltip" id="v-tooltip-13" role="tooltip" style="z-index: 2000;">
+            <!---->
+            <div class="v-overlay__content" target="[object HTMLButtonElement]" style="min-width: 0px; display: none;">Query</div>
+         </div>
+         <div class="v-overlay v-overlay--absolute v-theme--light v-locale--is-ltr v-tooltip" id="v-tooltip-15" role="tooltip" style="z-index: 2000;">
+            <!---->
+            <div class="v-overlay__content" target="[object HTMLButtonElement]" style="min-width: 0px; display: none;">Help</div>
+         </div>
+         <div class="v-overlay v-overlay--absolute v-theme--light v-locale--is-ltr v-tooltip" id="v-tooltip-17" role="tooltip" style="z-index: 2000;">
+            <!---->
+            <div class="v-overlay__content" target="[object HTMLButtonElement]" style="min-width: 0px; position: fixed; top: 66px; left: 1650px; max-height: 888px; max-width: 1875px; --v-overlay-anchor-origin: bottom center; transform-origin: center top; display: none;">Notification</div>
+         </div>
+      </div>
+   </body>
+</html> 
