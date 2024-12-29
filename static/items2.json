@@ -1,0 +1,74 @@
+[
+    {
+        "label": "Data Analytics vs Data Science",
+        "link": "https://www.youtube.com/watch?v=dcXqhMqhZUo&pp=ygUMZGF0YSBzY2llbmNl"
+    },
+    {
+        "label": "Statistics: The average | Descriptive statistics | Probability and Statistics",
+        "link": "https://youtu.be/uhxtUt_-GyM?si=uLShBtif43irVwQX"
+    },
+    {
+        "label": "Sample variance",
+        "link": "https://youtu.be/Qf3RMGXR-h8?si=ws-uMu4qGHEBO_bL"
+    },
+    {
+        "label": "Margin of error",
+        "link": "https://youtu.be/OwPSuHXmiPw?si=FEuaI_M-JA0DvC-C"
+    },
+    {
+        "label": "Variables in Python",
+        "link": "https://youtu.be/TqPzwenhMj0?si=8rBPzTvBL_xDoISy"
+    },
+    {
+        "label": "NumPy Tutorial for Beginners",
+        "link": "https://www.youtube.com/watch?v=gnKbAAVUzro&list=PLCC34OHNcOtpalASMlX2HHdsLNipyyhbK"
+    },
+    {
+        "label": "Linear Algebra for Machine Learning",
+        "link": "https://www.youtube.com/watch?v=_8V5o2UHG0E"
+    },
+    {
+        "label": "Hypothesis Testing Explained",
+        "link": "https://www.youtube.com/watch?v=V8qYcFjlw6U"
+    },
+    {
+        "label": "Bayesian Statistics",
+        "link": "https://www.youtube.com/watch?v=F1wlXyoIQR4"
+    },
+    {
+        "label": "Descriptive Statistics",
+        "link": "https://www.youtube.com/watch?v=xl0N7tHiwlw"
+    },
+    {
+        "label": "Python GUI Programming with Tkinter",
+        "link": "https://www.youtube.com/watch?v=1kw0XQf7hZM"
+    },
+    {
+        "label": "Bar charts and histograms",
+        "link": "https://www.youtube.com/watch?v=ZyTO4SwhSeE&list=PLQVvvaa0QuDfefDfXb9Yf0la1fPDKluPF&index=3"
+    },
+    {
+        "label": "Introduction to Machine Learning with Python",
+        "link": "https://www.youtube.com/watch?v=BVYtdiBo8zI"
+    },
+    {
+        "label": "Introduction to Deep Learning with Keras",
+        "link": "https://www.youtube.com/watch?v=xkZlCz06rBU"
+    },
+    {
+        "label": "Convolutional Neural Networks (CNNs)",
+        "link": "https://www.youtube.com/watch?v=QzY57FaENXg&pp=ygUkQ29udm9sdXRpb25hbCBOZXVyYWwgTmV0d29ya3MgKENOTnMp"
+    },
+    {
+        "label": "Natural Language Processing with Python and NLTK",
+        "link": "https://www.youtube.com/watch?v=8Bq82iUS2nU"
+    },
+    {
+        "label": "Sentiment Analysis in Python",
+        "link": "https://www.youtube.com/watch?v=Bv25DWEulPU"
+    },
+    {
+        "label": "Decision Trees ",
+        "link": "https://www.youtube.com/watch?v=ZVR2Way4nwQ&pp=ygUhRGVjaXNpb24gVHJlZXMgYW5kIFJhbmRvbSBGb3Jlc3Rz"
+    }
+]

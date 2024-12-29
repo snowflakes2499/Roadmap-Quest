@@ -1,0 +1,51 @@
+sno,url,name
+1,https://youtu.be/RBSUwFGa6Fk?si=zlsS61FvKV6TWQY_,Introduction to Data Science
+2,https://www.youtube.com/watch?v=dcXqhMqhZUo&pp=ygUMZGF0YSBzY2llbmNl,Data Analytics vs Data Science
+3,https://youtu.be/uhxtUt_-GyM?si=uLShBtif43irVwQX,Statistics: The average | Descriptive statistics | Probability and Statistics
+4,https://www.youtube.com/watch?v=hsPCte_PcVA&list=PL1328115D3D8A2566&index=2&pp=iAQB,Sample vs. Population Mean
+5,https://www.youtube.com/watch?v=6JFzI1DDyyk&list=PL1328115D3D8A2566&index=3&pp=iAQB,Variance of a population
+6,https://youtu.be/Qf3RMGXR-h8?si=ws-uMu4qGHEBO_bL,Sample variance
+7,https://youtu.be/HvDqbzu0i0E?si=4dLGtfoRNLuvOlob,Standard deviation
+8,https://youtu.be/O12yTz_8EOw?si=0J_5QmAYb8ieadbk,Binomial Distribution
+9,https://youtu.be/OwPSuHXmiPw?si=FEuaI_M-JA0DvC-C,Margin of error
+10,https://youtu.be/TqPzwenhMj0?si=8rBPzTvBL_xDoISy,Variables in Python
+11,https://www.youtube.com/watch?v=Ia2XgJkWh_U,Python Programming Tutorial for Beginners
+12,https://www.youtube.com/watch?v=gnKbAAVUzro&list=PLCC34OHNcOtpalASMlX2HHdsLNipyyhbK,NumPy Tutorial for Beginners
+13,https://www.youtube.com/watch?v=BPYOMD6C3pI,Pandas Tutorial for Data Analysis
+14,https://www.youtube.com/watch?v=0uBirYFhizE,Matplotlib Tutorial for Beginners
+15,https://www.youtube.com/watch?v=7GJ5f6ZNS4o,Seaborn Tutorial: Data Visualization in Python
+16,https://www.youtube.com/watch?v=CXgbekl66jc,Statistics for Data Science
+17,https://www.youtube.com/watch?v=_8V5o2UHG0E,Linear Algebra for Machine Learning
+18,https://www.youtube.com/watch?v=D16J6mHH0HE,Calculus for Data Science
+19,https://www.youtube.com/watch?v=ZkQWgmwhTkA,Probability Theory Basics
+20,https://www.youtube.com/watch?v=V8qYcFjlw6U,Hypothesis Testing Explained
+21,https://www.youtube.com/watch?v=F1wlXyoIQR4,Bayesian Statistics
+22,https://www.youtube.com/watch?v=xl0N7tHiwlw,Descriptive Statistics
+23,https://www.youtube.com/watch?v=HgAgG3Kzw_U,Python Data Structures and Algorithms
+24,https://www.youtube.com/watch?v=59TLdYnIg0M,Object-Oriented Programming in Python
+25,https://www.youtube.com/watch?v=WBlWm52dR7s,Python for Web Scraping
+26,https://www.youtube.com/watch?v=l8YK7bSXgpc,Regular Expressions in Python
+27,https://www.youtube.com/watch?v=1kw0XQf7hZM,Python GUI Programming with Tkinter
+28,https://www.youtube.com/watch?v=2QKZvCJlN0g,Introduction to Flask: Python Web Development
+29,https://www.youtube.com/watch?v=ZyTO4SwhSeE&list=PLQVvvaa0QuDfefDfXb9Yf0la1fPDKluPF&index=3,Bar charts and histograms
+30,https://www.youtube.com/watch?v=BVYtdiBo8zI,Introduction to Machine Learning with Python
+31,https://www.youtube.com/watch?v=7d1l2wUvn_c,Building Machine Learning Models with Scikit-Learn
+32,https://www.youtube.com/watch?v=T3JGr0B5g54,Neural Networks with TensorFlow
+33,https://www.youtube.com/watch?v=xkZlCz06rBU,Introduction to Deep Learning with Keras
+34,https://www.youtube.com/watch?v=QzY57FaENXg&pp=ygUkQ29udm9sdXRpb25hbCBOZXVyYWwgTmV0d29ya3MgKENOTnMp,Convolutional Neural Networks (CNNs)
+35,https://www.youtube.com/watch?v=mbOXtfbYcHc,Recurrent Neural Networks (RNNs)
+36,https://www.youtube.com/watch?v=8Bq82iUS2nU,Natural Language Processing with Python and NLTK
+37,https://www.youtube.com/watch?v=Bv25DWEulPU,Sentiment Analysis in Python
+38,https://www.youtube.com/watch?v=tpCFfeUEGs8,Clustering Algorithms Explained
+39,https://www.youtube.com/watch?v=mlJnkx02lYo,Introduction to K-Means Clustering
+40,https://www.youtube.com/watch?v=ZVR2Way4nwQ&pp=ygUhRGVjaXNpb24gVHJlZXMgYW5kIFJhbmRvbSBGb3Jlc3Rz,Decision Trees 
+41,https://www.youtube.com/watch?v=_YPScrckx28&pp=ygUDU1ZN,Introduction to Support Vector Machines (SVM)
+42,https://www.youtube.com/watch?v=JvyLpYEMu5Q,Time Series Forecasting with ARIMA
+43,https://www.youtube.com/watch?v=yGKTphqxR9Q,Introduction to Bayesian Networks
+44,https://www.youtube.com/watch?v=soAXoUv6iyc,Association Rule Mining
+45,https://www.youtube.com/watch?v=yDK8tGApnS8,Reinforcement Learning with Python
+46,https://www.youtube.com/watch?v=_T8LGqJtuGc,Genetic Algorithms Explained
+47,https://www.youtube.com/watch?v=hl3bQySs8sM,Euclidean Distance
+48,https://www.youtube.com/watch?v=DAIqY9eQmC4,Apache Kafka for Stream Processing
+49,https://www.youtube.com/watch?v=WbTOutpwPHs&list=PLQVvvaa0QuDfefDfXb9Yf0la1fPDKluPF&index=4,Scatter Plots
+50,https://www.youtube.com/watch?v=h8CtTHeDMpc,Deep Reinforcement Learning
